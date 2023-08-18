@@ -8,7 +8,7 @@ CREATE TABLE UsersApp (
     creationDate DATETIME NOT NULL
 );
 
-CREATE TABLE investment (
+CREATE TABLE Investment (
     id INT AUTO_INCREMENT PRIMARY KEY,
     company VARCHAR(255) NOT NULL,
     amount DECIMAL(10,2) NOT NULL,
@@ -29,32 +29,14 @@ INSERT INTO UsersApp (username, password, creationDate) VALUES
 ('user9', 'pass9', CURRENT_TIMESTAMP()),
 ('user10', 'pass10', CURRENT_TIMESTAMP());
 
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company A', 10000.00, 12, '2023-07-31', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company B', 5000.00, 6, '2023-08-15', 0);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company C', 25000.00, 24, '2023-12-31', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company D', 15000.00, 18, '2023-10-31', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company E', 2000.00, 3, '2023-07-20', 0);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company F', 8000.00, 9, '2023-09-30', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company G', 35000.00, 36, '2024-06-30', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company H', 6000.00, 6, '2023-08-31', 1);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company I', 1000.00, 1, '2023-07-07', 0);
-
-INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn)
-VALUES ('Company J', 40000.00, 48, '2025-12-31', 1);
+INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn) VALUES
+('Company A', 10000.00, 12, '2023-07-31', 1),
+('Company B', 5000.00, 6, '2023-08-15', 0),
+('Company C', 25000.00, 24, '2023-12-31', 1),
+('Company D', 15000.00, 18, '2023-10-31', 1),
+('Company E', 2000.00, 3, '2023-07-20', 0),
+('Company F', 8000.00, 9, '2023-09-30', 1),
+('Company G', 35000.00, 36, '2024-06-30', 1),
+('Company H', 6000.00, 6, '2023-08-31', 1),
+('Company I', 1000.00, 1, '2023-07-07', 0),
+('Company J', 40000.00, 48, '2025-12-31', 1);
