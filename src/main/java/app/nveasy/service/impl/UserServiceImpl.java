@@ -24,4 +24,9 @@ public class UserServiceImpl implements UserService
 	public List<UsersApp> findAll() {
 		return userRep.findAll();
 	}
+
+	@Override
+	public UsersApp create(UsersApp usersApp) {
+		return userRep.save(usersApp);
+	}
 }

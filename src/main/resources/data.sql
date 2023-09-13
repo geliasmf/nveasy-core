@@ -40,3 +40,13 @@ INSERT INTO Investment (company, amount, term, maturityDate, monthlyReturn) VALU
 ('Company H', 6000.00, 6, '2023-08-31', 1),
 ('Company I', 1000.00, 1, '2023-07-07', 0),
 ('Company J', 40000.00, 48, '2025-12-31', 1);
+
+-- Inserta relaciones entre usuarios y roles
+INSERT INTO Role (id, name) VALUES (1, 'ROLE_END_USER');
+INSERT INTO Role (id, name) VALUES (2, 'ROLE_ADMIN');
+
+-- Inserta relaciones entre usuarios y roles
+INSERT INTO user_roles (user_id, role_id) VALUES (1, 1); -- Usuario 1 tiene Rol 1
+INSERT INTO user_roles (user_id, role_id) VALUES (1, 2); -- Usuario 1 tiene Rol 2
+INSERT INTO user_roles (user_id, role_id) VALUES (2, 1); -- Usuario 1 tiene Rol 1
+INSERT INTO user_roles (user_id, role_id) VALUES (2, 2); -- Usuario 1 tiene Rol 2
